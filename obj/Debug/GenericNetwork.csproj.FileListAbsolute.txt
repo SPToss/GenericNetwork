@@ -1,0 +1,5 @@
+C:\Users\Sebas\documents\visual studio 2017\Projects\GenericNeuralTrainer\GenericNetwork\bin\Debug\GenericNetwork.dll
+C:\Users\Sebas\documents\visual studio 2017\Projects\GenericNeuralTrainer\GenericNetwork\bin\Debug\GenericNetwork.pdb
+C:\Users\Sebas\documents\visual studio 2017\Projects\GenericNeuralTrainer\GenericNetwork\obj\Debug\GenericNetwork.csprojResolveAssemblyReference.cache
+C:\Users\Sebas\documents\visual studio 2017\Projects\GenericNeuralTrainer\GenericNetwork\obj\Debug\GenericNetwork.dll
+C:\Users\Sebas\documents\visual studio 2017\Projects\GenericNeuralTrainer\GenericNetwork\obj\Debug\GenericNetwork.pdb
