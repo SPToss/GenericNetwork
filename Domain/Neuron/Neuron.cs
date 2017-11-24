@@ -1,8 +1,12 @@
-﻿using GenericNetwork.Domain.Neuron.ActivactionFunctions;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace GenericNetwork.Domain.Neuron
 {
-    public class Neuron<TActivation> : NeuronBase<TActivation> where TActivation : ActivactionFunctionBase, new()
+    class Neuron
     {
     }
 }

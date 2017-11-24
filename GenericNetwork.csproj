@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Domain\Network\Network.cs" />
     <Compile Include="Domain\Network\NetworkDataBase.cs" />
     <Compile Include="Domain\Network\NetworkInputBase.cs" />

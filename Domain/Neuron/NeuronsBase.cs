@@ -3,7 +3,7 @@ using GenericNetwork.Domain.Neuron.ActivactionFunctions;
 
 namespace GenericNetwork.Domain.Neuron
 {
-    public abstract class NeuronsBase<TActivation,TNeurons> :List<TNeurons> where TActivation : ActivactionFunctionBase, new() where TNeurons : NeuronBase<TActivation>, new ()
+    public abstract class NeuronsBase<TNeurons, TActivation> :List<TNeurons>  where TNeurons : NeuronBase<TActivation>, new () where TActivation : ActivactionFunctionBase , new()
     {
     }
 }

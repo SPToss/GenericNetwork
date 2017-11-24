@@ -2,7 +2,7 @@
 
 namespace GenericNetwork.Domain.Neuron
 {
-    public class Neurons<TActivation,TNeurons> : NeuronsBase<TActivation,TNeurons> where TActivation : ActivactionFunctionBase, new() where TNeurons : NeuronBase<TActivation>, new()
+    public class Neurons<TNeuron> : NeuronsBase<TNeuron> where TNeuron : NeuronBase, new()
     {
     }
 }

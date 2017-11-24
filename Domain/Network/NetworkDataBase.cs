@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using GenericNetwork.Domain.Neuron;
-using GenericNetwork.Domain.Neuron.ActivactionFunctions;
 
 namespace GenericNetwork.Domain.Network
 {
-    public abstract class NetworkDataBase<TNetworkData,TActivation, TNeurons> where TNetworkData : ICollection<Tuple<NetworkInputBase,NetworkOutputBase>> where TActivation : ActivactionFunctionBase, new() where TNeurons : NeuronBase<TActivation>, new()
+    public abstract class NetworkDataBase<TNeuron> where TNeuron : NeuronBase, new()
     {
-        private readonly TNetworkData _t;
+        private readonly ICollection<Tuple<NetworkInputBase, NetworkOutputBase>> _t;
         private Random _random;
 
-        protected Neurons<TActivation,TNeurons> InputNeurons;
-        protected Neurons<TActivation, TNeurons> HiddenNeurons;
-        protected Neurons<TActivation, TNeurons> OutputNeurons;
+        protected NeuronsBase<TNeuron> InputNeurons;
+        protected NeuronsBase<TNeuron> HiddenNeurons;
+        protected NeuronsBase<TNeuron> OutputNeurons;
 
-        protected NetworkDataBase(TNetworkData t)
+        protected NetworkDataBase(ICollection<Tuple<NetworkInputBase, NetworkOutputBase>> t)
         {
             _t = t;
         }
